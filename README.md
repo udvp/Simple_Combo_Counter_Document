@@ -1,32 +1,31 @@
 # Simple_Combo_Counter_Document
 
 ```cpp
+UComboCounterComponent();
 
-  UComboCounterComponent();
+UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
+int ComboCount{};
 
-	UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
-	int ComboCount{};
+UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
+int IncrementAmount{};
 
-	UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
-	int IncrementAmount{};
+UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
+int MaxCombo{};
 
-	UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
-	int MaxCombo{};
-
-	UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
-	float ComboTimeout{};
+UPROPERTY(EditAnywhere, Category = "SimpleComboCounter")
+float ComboTimeout{};
 
 
-	UFUNCTION(BlueprintCallable, Category = "SimpleComboCounter")
-	void IncrementCombo();
+UFUNCTION(BlueprintCallable, Category = "SimpleComboCounter")
+void IncrementCombo();
 
-  UFUNCTION(BlueprintCallable, Category = "SimpleComboCounter")
-	int GetCombo();
+UFUNCTION(BlueprintCallable, Category = "SimpleComboCounter")
+int GetCombo();
 
-  UFUNCTION(BlueprintCallable, Category = "SimpleComboCounter")
-	void ResetCombo();
+UFUNCTION(BlueprintCallable, Category = "SimpleComboCounter")
+void ResetCombo();
 
-	FTimerHandle ComboTimerHandle;
+FTimerHandle ComboTimerHandle;
 
 ```
 
